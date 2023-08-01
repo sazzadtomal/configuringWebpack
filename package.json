@@ -4,7 +4,9 @@
   "description": "configuration of webpack bundler from scratch",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"webpack --config webpack.config.prod.js"
   },
   "repository": {
     "type": "git",
@@ -22,8 +24,28 @@
     "url": "https://github.com/sazzadtomal/configuringWebpack/issues"
   },
   "homepage": "https://github.com/sazzadtomal/configuringWebpack#readme",
+  "brwoserslist": ">1%, last 2 versions",
   "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-stage-2": "^7.8.3",
+    "autoprefixer": "^10.4.14",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "postcss-loader": "^7.3.3",
+    "style-loader": "^3.3.3",
+    "url-loader": "^4.1.1",
     "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.2"
   }
 }
